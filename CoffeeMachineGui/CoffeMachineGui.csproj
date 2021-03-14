@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\CoffeeMachine.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeMachineBusiness\CoffeeMachineBusiness.csproj" />
+    <ProjectReference Include="..\CoffeeMachineDataProvider\CoffeeMachineDataProvider.csproj" />
+    <ProjectReference Include="..\CoffeeMachineModel\CoffeeMachineModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\CoffeeMachine.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,46 @@
+﻿[
+  {
+    "Id": "expresso",
+    "Label": "Expresso",
+    "Ingredients": {
+      "coffee": 1,
+      "water": 1
+    }
+  },
+  {
+    "Id": "long",
+    "Label": "Allongé",
+    "Ingredients": {
+      "coffee": 1,
+      "water": 2
+    }
+  },
+  {
+    "Id": "capuccino",
+    "Label": "Capuccino",
+    "Ingredients": {
+      "coffee": 1,
+      "water": 1,
+      "chocolate": 1,
+      "cream": 1
+    }
+  },
+  {
+    "Id": "chocolate",
+    "Label": "Chocolat",
+    "Ingredients": {
+      "milk": 2,
+      "water": 1,
+      "chocolate": 3,
+      "sugar": 1
+    }
+  },
+  {
+    "Id": "tea",
+    "Label": "Thé",
+    "Ingredients": {
+      "tea": 1,
+      "water": 2
+    }
+  }
+]

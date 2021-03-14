@@ -1,0 +1,37 @@
+﻿[
+  {
+    "Id": "coffee",
+    "Label": "Café",
+    "Price": 1
+  },
+  {
+    "Id": "sugar",
+    "Label": "Sucre",
+    "Price": 0.1
+  },
+  {
+    "Id": "cream",
+    "Label": "Crème",
+    "Price": 0.5
+  },
+  {
+    "Id": "tea",
+    "Label": "Thé",
+    "Price": 2
+  },
+  {
+    "Id": "water",
+    "Label": "Eau",
+    "Price": 0.2
+  },
+  {
+    "Id": "chocolate",
+    "Label": "Chocolat",
+    "Price": 1
+  },
+  {
+    "Id": "milk",
+    "Label": "Lait",
+    "Price": 0.4
+  }
+]

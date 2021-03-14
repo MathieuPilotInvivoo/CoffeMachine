@@ -1,0 +1,38 @@
+﻿<Window x:Class="CoffeMachineGui.CoffeMachineScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoffeMachineGui"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:CoffeeMachineVM />
+    </Window.DataContext>
+    <Window.Background>
+        <ImageBrush Stretch="Fill" ImageSource=".\Images\CoffeeMachine.jpg" Opacity="0.5" AlignmentY="Top" AlignmentX="Center"/>
+    </Window.Background>
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+    </Window.Resources>
+    <Grid Height="100" Width="250" Margin="10">
+        <Grid.Background>
+            <SolidColorBrush Color="White"></SolidColorBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Height="23" Text="Recette" Margin="20 0 0 0"/>
+        <ComboBox Grid.Column="1" Grid.Row="0" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" Name="comboBoxRecipe" Width="140"  ItemsSource="{Binding Recipes}"
+          DisplayMemberPath="Label" SelectedItem="{Binding SelectedRecipe}"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Text="Prix" Margin="20 0 0 0"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Text="{Binding Price}"/>
+    </Grid>
+</Window>
